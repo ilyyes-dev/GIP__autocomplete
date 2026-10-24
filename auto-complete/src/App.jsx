@@ -1,6 +1,5 @@
 import {useState} from 'react';
 import { countries } from './data.js';
-import { provinces } from './wilaya.js';
 import './App.css';
 
 function App() {
@@ -19,9 +18,6 @@ function App() {
         />
         {countries.map((country) =>
             txt!='' && FrToEng(country.name).includes(FrToEng(txt)) && ( <div onClick={()=>{settxt(country.name)}} key={country.id} className="result">{country.name}</div>)
-        )}
-        {provinces.map((p) =>
-            txt!='' && FrToEng(p.province).includes(FrToEng(txt)) && ( <div onClick={()=>{settxt(p.province)}} key={p.id} className="result">{p.province}</div>)
         )}
     </div>
   );
