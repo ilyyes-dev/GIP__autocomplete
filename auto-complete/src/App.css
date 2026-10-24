@@ -1,0 +1,32 @@
+.App {
+    width: 300px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #888;
+}
+
+.result {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-top: none;
+    background-color: white;
+}
+
+.result:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
